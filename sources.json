@@ -1,0 +1,8 @@
+[
+    {"name": "OpenAI Blog", "url": "https://openai.com/news/rss.xml"},
+    {"name": "Anthropic News", "url": "https://www.anthropic.com/feed.xml"},
+    {"name": "Google AI Blog", "url": "https://blog.research.google/feeds/posts/default"},
+    {"name": "Hugging Face Blog", "url": "https://huggingface.co/blog/feed.xml"},
+    {"name": "Angular Blog", "url": "https://blog.angular.dev/feed"},
+    {"name": "GitHub Blog", "url": "https://github.blog/feed/"},
+]
