@@ -8,6 +8,9 @@ on:
 jobs:
   build-and-run:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # 賦予 GitHub Actions 寫入與提交 history.json 的權限
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -25,5 +28,11 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          RSS_URL: 'https://openai.com/news/rss.xml'
         run: python main.py
+
+      - name: Commit history.json
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add history.json
+          git diff --staged --quiet || (git commit -m "Update history.json [skip ci]" && git push)
