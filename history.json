@@ -93,5 +93,6 @@
   "https://openai.com/index/scaling-storage-one-billion-users-part-one",
   "https://github.blog/ai-and-ml/github-copilot/marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github/",
   "https://openai.com/index/perplexity-improving-accuracy-with-astra",
-  "https://openai.com/index/cognition-devin-testing-with-astra"
+  "https://openai.com/index/cognition-devin-testing-with-astra",
+  "https://huggingface.co/blog/asyncgrpo-lora-hfjobs"
 ]
